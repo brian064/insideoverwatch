@@ -1,0 +1,834 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	/*height: 3000px;*/
+	background-color: #262626;
+}
+
+.logoHolder {
+	position: relative;
+	display: none;
+	width: 30px;
+	height: 30px;
+	background-color: white;
+	border-radius: 100%;
+	margin-left: 5%;
+	margin-top: 20px;
+	opacity: 0.50;
+}
+
+.nav {
+	display: block;
+	width: 100%;
+	height: 70px;
+	background-color: #262626;
+	padding-bottom: 20px;
+	border-bottom: 8px solid rgba(0, 0, 0, 0.25);
+	z-index: 6;
+}
+
+.hamburger img {
+	position: relative;
+	display: none;
+	width: 45px;
+	height: 45px;
+	left: 5%;
+	margin-top: 3%;
+	opacity: 0.55;
+	transition: opacity 0.2s ease-in-out;
+}
+
+.hamburger img:hover {
+	opacity: 1.0;
+	transition: opacity 0.2s ease-in-out;
+}
+
+.closeBtn img {
+	display: block;
+	position: absolute;
+	height: 35px;
+	width: 35px;
+	left: 80%;
+	top: 5%;
+	color: #262626
+}
+
+.sideBar {
+	display: none;
+	position: fixed;
+	left: -100%;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	max-height: 100vh;
+	z-index: 5;
+	background-color: #FFAD3E;
+	transition: all 0.2s ease-in-out;
+}
+
+.sideBarVisible {
+	left: 0;
+	transition: all 0.2s ease-in-out;
+}
+
+.sideBar ul {
+	margin-top: 45%;
+}
+
+.sideBar ul li {
+	list-style: none;
+	color: #262626;
+	font-family: "BigNoodleTitling", sans-serif;
+	text-align: center;
+	font-size: 40px;
+	border: 2px solid #262626;
+	border-radius: 3%;
+	margin: 10px;
+}
+
+.sideBar a {
+	text-decoration: none;
+}
+
+.nav ul {
+	position: absolute;
+	display: inline-block;
+	height: 40px;
+	width: 300px;
+	/*border: 1px solid red;*/
+	margin-left: 50px;
+	top: 3%;
+}
+
+.nav li {
+	position: relative;
+	display: inline-block;
+	color: white;
+	font-family: "BigNoodleTitling", sans-serif;
+	text-transform: uppercase;
+	font-size: 22px;
+	margin-left: 20px;
+	cursor: pointer;
+	opacity: 0.30;
+	transition: all 0.2s ease-in-out;
+	/*border: 1px solid red;*/
+}
+
+.nav li:hover {
+	opacity: 1.0;
+	transition: all 0.2s ease-in-out;
+}
+
+.searchBar {
+	position: absolute;
+	display: none;
+	top: 4.5%;
+	left: 75%;
+	height: 15px;
+	width: 170px;
+	background-color: white;
+	opacity: 0.50;
+	z-index: 1;
+}
+
+.welcomeSec {
+	display: block;
+	width: 100%;
+	height: 500px;
+	background: linear-gradient(to bottom right, #FFAD3E, #cc7700);
+	border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.darker {
+	display: none;
+	width: 50%;
+	position: relative;
+	margin-left: 0px;
+	margin-right: 0px;
+	height: 500px;
+	background-color: rgba(0, 0, 0, 0.30);
+}
+
+.welcomeMessage {
+	position: relative;
+	display: inline-block;
+	/*border: 1px solid red;*/
+	width: 300px;
+	top: 15%;
+	left: 12%;
+	color: white;
+	
+}
+
+.welcomeMessage h1 {
+	position: relative;
+	text-transform: uppercase;
+	font-family: "BigNoodleTitlingOblique";
+	font-weight: 500;
+	font-size: 70px;
+	top: 60px;
+	margin-bottom: 20px;
+	width: 300px;
+	padding: 0;
+}
+
+.welcomeMessage h2 {
+	position: absolute;
+	font-family: "BigNoodleTitlingOblique", sans-serif;
+	font-size: 45px;
+	width: 300px;
+	padding: 0;
+	top: 27px;
+	color: #262626;
+}
+
+.welcomeMessage p {
+	position: relative;
+	line-height: 2em;
+	padding-bottom: 15px;
+	border-bottom: 2px solid #262626;
+	font-family: "Roboto Condensed";
+	font-size: 17px;
+	top: 60px;
+	color: #262626;
+}
+
+.short {
+	width: 350px;
+}
+
+.overSlider {
+	position: absolute;
+	display: block;
+	left: 45%;
+	top: 17%;
+	width: 650px;
+	border: 7px solid rgba(0, 0, 0, 0.35);
+	border-radius: 3%;
+}
+.carousel-caption .btn {
+	display: none;
+	position: absolute;
+	top: 10px;
+	left: 0;
+}
+
+.carousel-caption h2 {
+	text-align: left;
+	font-family: "BigNoodleTitlingOblique", sans-serif;
+	font-size: 55px;
+	color: white;
+}
+
+.chooseSec {
+	display: block;
+	height: 200px;
+	background-color: #262626;
+	border-top: 5px solid #404040;
+}
+
+.chooseSec h1 {
+	position: relative;
+	display: inline-block;
+	left: 50%;
+	top: 20px;
+	margin-left: -250px;
+	text-align: center;
+	color: #FFAD3E;
+	font-family: "BigNoodleTitlingOblique";
+	text-transform: uppercase;
+	border: 3px solid #FFAD3E;
+	border-radius: 4%;
+	width: 500px;
+}
+
+.chooseSec p {
+	position: relative;
+	display: block;
+	width: 300px;
+	text-align: center;
+	color: #FFAD3E;
+	left: 50%;
+	margin-left: -150px;
+	margin-top: 35px;
+	opacity: 0.80;
+	border-bottom: 2px solid #FFAD3E;
+	padding-bottom: 10px;
+	font-family: "Roboto Condensed", sans-serif;
+}
+
+.tabs {
+	display: block;
+	width: 100%;
+	height: 41px;
+	border: 1px solid rgba(0, 0, 0, 0);
+	background-color: #262626;
+	color: rgba(255, 255, 255, 0.85);
+	font-family: "BigNoodleTitling";
+}
+
+.tab {
+	display: inline-block;
+	margin-left: 3%;
+	width: 130px;
+	height: 40px;
+	background-color: #cc3333;
+	cursor: pointer;
+	
+}
+
+.tab h4 {
+	font-size: 20px;
+	text-align: center;
+}
+
+.tab2 {
+	display: inline-block;
+	width: 130px;
+	height: 40px;
+	background-color: #6b6bc7;
+	cursor: pointer;
+	
+}
+
+.tab2 h4 {
+	font-size: 20px;
+	text-align: center;
+}
+
+.tab3 {
+	display: inline-block;
+	width: 130px;
+	height: 40px;
+	background-color: #996bc7;
+	cursor: pointer;
+	
+}
+
+.tab3 h4 {
+	font-size: 20px;
+	text-align: center;
+}
+
+.tab4 {
+	display: inline-block;
+	width: 130px;
+	height: 40px;
+	background-color: #FFAD3E;
+	cursor: pointer;
+	
+}
+
+.tab4 h4 {
+	font-size: 20px;
+	text-align: center;
+}
+
+
+
+.offense {
+	position: absolute;
+	display: block;
+	width: 100%;
+	background-color: #cc3333;
+	padding: 50px 30px;
+	z-index: 1;
+}
+
+.defense {
+	position: absolute;
+	display: block;
+	width: 100%;
+	background-color: #6b6bc7;
+	padding: 50px 30px;
+	z-index: 1;
+}
+
+.tank {
+	position: absolute;
+	display: block;
+	width: 100%;
+	background-color: #996bc7;
+	padding: 50px 30px;
+	z-index: 1;
+}
+
+.support {
+	position: absolute;
+	display: block;
+	width: 100%;
+	background-color: #FFAD3E;
+	padding: 50px 30px;
+	z-index: 1;
+}
+
+/* for mobile */
+
+.offense1 {
+	display: none;
+	width: 100%;
+	background-color: #cc3333;
+	padding: 50px 30px;
+}
+
+.defense1 {
+	display: none;
+	width: 100%;
+	background-color: #6b6bc7;
+	padding: 50px 30px;
+}
+
+.tank1 {
+	display: none;
+	width: 100%;
+	background-color: #996bc7;
+	padding: 50px 30px;
+}
+
+.support1 {
+	display: none;
+	width: 100%;
+	background-color: #FFAD3E;
+	padding: 50px 30px;
+}
+
+
+
+
+
+
+/*offense */
+
+.genji {
+	background-image: url("https://blzgdapipro-a.akamaihd.net/media/thumbnail/genji-gameplay.jpg");
+}
+
+.mcree {
+	background-image: url("http://7wallpapers.net/wp-content/uploads/6_Overwatch-McCree.jpg");
+}
+
+.pharah {
+	background-image: url("http://7wallpapers.net/wp-content/uploads/4_Overwatch-Pharah.jpg");
+}
+
+.reaper {
+	background-image: url("https://blzgdapipro-a.akamaihd.net/media/screenshot/reaper-screenshot-004.jpg");
+}
+
+.soldier {
+	background-image: url("https://i.ytimg.com/vi/XNUgbti7H8Y/maxresdefault.jpg");
+}
+
+.tracer {
+	background-image: url("https://images5.alphacoders.com/686/686328.jpg");
+}
+
+.sombra {
+	background-image: url("https://i.kinja-img.com/gawker-media/image/upload/s--O-BDqnSq--/c_scale,f_auto,fl_progressive,q_80,w_800/utgp3cketdgzegwkgw3o.png");
+}
+
+/* defense */
+
+.bastion {
+	background-image: url("https://blzgdapipro-a.akamaihd.net/media/thumbnail/bastion-gameplay.jpg");
+}
+
+.hanzo {
+	background-image: url("https://blzgdapipro-a.akamaihd.net/media/thumbnail/hanzo-gameplay.jpg");
+}
+
+.junkrat {
+	background-image: url("https://i.ytimg.com/vi/QHxatyjDtHY/maxresdefault.jpg");
+}
+
+.mei {
+	background-image: url("https://www.technobuffalo.com/wp-content/uploads/2016/12/Overwatch-Mei-1280x720.jpg");
+}
+
+.torbjorn {
+	background-image: url("https://blzgdapipro-a.akamaihd.net/media/screenshot/torbjorn-screenshot-007.jpg");
+}
+
+.widowmaker {
+	background-image: url("https://www.pcgamesn.com/sites/default/files/widowmaker%20nerf.jpg");
+}
+
+/* tanks */
+
+.dva {
+	background-image: url("https://blzgdapipro-a.akamaihd.net/media/screenshot/dva-screenshot-001.jpg");
+}
+
+.reinhardt {
+	background-image: url("https://blzgdapipro-a.akamaihd.net/media/thumbnail/reinhardt-gameplay.jpg");
+}
+
+.roadhog {
+	background-image: url("https://assets.vg247.com/current//2015/09/overwatch_02.jpg");
+}
+
+.winston {
+	background-image: url("https://blzgdapipro-a.akamaihd.net/media/thumbnail/winston-gameplay.jpg");
+}
+
+.zarya {
+	background-image: url("https://i.ytimg.com/vi/aYb54PnxRL8/maxresdefault.jpg");
+}
+
+.orisa {
+	background-image: url("https://blzgdapipro-a.akamaihd.net/media/screenshot/orisa-screenshot-004.jpg");
+}
+
+/* support */
+
+.lucio {
+	background-image: url("https://assets.vg247.com/current//2015/08/overwatch_lucio_gamescom_2015.jpg");
+}
+
+.mercy {
+	background-image: url("http://cdn.gamer-network.net/2016/metabomb/overwatchmercyguidelarge.jpg");
+}
+
+.symmetra {
+	background-image: url("https://7f9c61237bd6e732e57e-5fa18836a2ae6b5e7c49abcc89b20237.ssl.cf1.rackcdn.com/12232221_overwatch-team-not-looking-at-making-symmetra_481cd102_m.jpg?bg=80655D");
+}
+
+.zenyatta {
+	background-image: url("https://blzgdapipro-a.akamaihd.net/media/thumbnail/zenyatta-gameplay.jpg");
+}
+
+.ana {
+	background-image: url("https://i.ytimg.com/vi/ZcCGKrYgr0k/maxresdefault.jpg");
+}
+
+.imageHolder {
+	display: block;
+	background-color: grey;
+	max-height: 400px;
+	max-width: 400px;
+	margin: 20px;
+	border: 6px solid #3F3D3E;
+	border-radius: 12% 30% 12% 30%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	overflow: hidden;
+	cursor: pointer;
+	opacity: 0.55;
+	transition: opacity 0.2s ease-in-out;
+	z-index: 3;
+}
+
+.imageHolder:hover {
+	opacity: 1.0;
+	transition: opacity 0.2s ease-in-out;
+}
+
+.imageTitle {
+	position: relative;
+	display: inline-block;
+	margin-top: 70%;
+	margin-left: 10%;
+	color: white;
+	font-size-adjust: 50px;
+	font-family: "BigNoodleTitlingOblique", sans-serif;
+}
+
+.heroMobile {
+	display: none;
+	width: 100%;
+	height: 120px;
+	color: white;
+	text-align: center;
+	background-attachment: scroll;
+	background-size: cover;
+	background-position: center center;
+	margin: 5px 0 5px 0;
+	cursor: pointer;
+}
+
+.offenseMob {
+	background-color: #cc3333;
+}
+
+.defenseMob {
+	background-color: #6b6bc7;
+}
+
+.tankMob {
+	background-color: #996bc7;
+}
+
+.supportMob {
+	background-color: #FFAD3E;
+}
+
+.section {
+	height: 80px;
+}
+
+.heroMobile h1 {
+	position: relative;
+	display: inline-block;
+	margin-top: 30px;
+	font-family: "BigNoodleTitlingOblique", sans-serif;
+}
+
+.section h1 {
+	margin-top: 20px;
+}
+
+/* offense */
+
+.genjiMob {
+	background-image: url("https://blzgdapipro-a.akamaihd.net/media/thumbnail/genji-gameplay.jpg");
+}
+
+.mcreeMob {
+	background-image: url("http://7wallpapers.net/wp-content/uploads/6_Overwatch-McCree.jpg");
+}
+
+.pharahMob {
+	background-image: url("http://7wallpapers.net/wp-content/uploads/4_Overwatch-Pharah.jpg");
+}
+
+.reaperMob {
+	background-image: url("https://blzgdapipro-a.akamaihd.net/media/screenshot/reaper-screenshot-004.jpg");
+}
+
+.soldierMob {
+	background-image: url("https://i.ytimg.com/vi/XNUgbti7H8Y/maxresdefault.jpg");
+}
+
+.tracerMob {
+	background-image: url("https://images5.alphacoders.com/686/686328.jpg");
+}
+
+.sombraMob {
+	background-image: url("https://i.kinja-img.com/gawker-media/image/upload/s--O-BDqnSq--/c_scale,f_auto,fl_progressive,q_80,w_800/utgp3cketdgzegwkgw3o.png");
+}
+
+/* defense */
+
+.bastionMob {
+	background-image: url("https://blzgdapipro-a.akamaihd.net/media/thumbnail/bastion-gameplay.jpg");
+}
+
+.hanzoMob {
+	background-image: url("https://blzgdapipro-a.akamaihd.net/media/thumbnail/hanzo-gameplay.jpg");
+}
+
+.junkratMob {
+	background-image: url("https://i.ytimg.com/vi/QHxatyjDtHY/maxresdefault.jpg");
+}
+
+.meiMob {
+	background-image: url("https://www.technobuffalo.com/wp-content/uploads/2016/12/Overwatch-Mei-1280x720.jpg");
+}
+
+.torbjornMob {
+	background-image: url("https://blzgdapipro-a.akamaihd.net/media/screenshot/torbjorn-screenshot-007.jpg");
+}
+
+.widowmakerMob {
+	background-image: url("https://www.pcgamesn.com/sites/default/files/widowmaker%20nerf.jpg");
+}
+
+/* tank */
+
+.dvaMob {
+	background-image: url("https://blzgdapipro-a.akamaihd.net/media/screenshot/dva-screenshot-001.jpg");
+}
+
+.reinhardtMob {
+	background-image: url("https://blzgdapipro-a.akamaihd.net/media/thumbnail/reinhardt-gameplay.jpg");
+}
+
+.roadhogMob {
+	background-image: url("https://assets.vg247.com/current//2015/09/overwatch_02.jpg");
+}
+
+.winstonMob {
+	background-image: url("https://blzgdapipro-a.akamaihd.net/media/thumbnail/winston-gameplay.jpg");
+}
+
+.zaryaMob {
+	background-image: url("https://i.ytimg.com/vi/aYb54PnxRL8/maxresdefault.jpg");
+}
+
+.orisaMob {
+	background-image: url("https://blzgdapipro-a.akamaihd.net/media/screenshot/orisa-screenshot-004.jpg");
+}
+
+/* support */
+
+.lucioMob {
+	background-image: url("https://assets.vg247.com/current//2015/08/overwatch_lucio_gamescom_2015.jpg");
+}
+
+.mercyMob {
+	background-image: url("http://cdn.gamer-network.net/2016/metabomb/overwatchmercyguidelarge.jpg");
+}
+
+.symmetraMob {
+	background-image: url("https://7f9c61237bd6e732e57e-5fa18836a2ae6b5e7c49abcc89b20237.ssl.cf1.rackcdn.com/12232221_overwatch-team-not-looking-at-making-symmetra_481cd102_m.jpg?bg=80655D");
+}
+
+.zenyattaMob {
+	background-image: url("https://blzgdapipro-a.akamaihd.net/media/thumbnail/zenyatta-gameplay.jpg");
+}
+
+.anaMob {
+	background-image: url("https://i.ytimg.com/vi/ZcCGKrYgr0k/maxresdefault.jpg");
+}
+
+.footer {
+	display: block;
+	width: 100%;
+	background-color: #262626;
+	z-index: 5;
+}
+
+.footer2 {
+	display: block;
+	width: 100%;
+	height: 100px;
+	background-color: #262626;
+	text-align: center;
+	color: white;
+}
+
+.footer2 h1 {
+	margin-top: 120px;
+	font-family: "BigNoodleTitling", sans-serif;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1100px) {
+	
+	.overSlider {
+		top: 25%;
+		width: 440px;
+	}
+	
+	.welcomeMessage {
+		left: 6%;
+	}
+	
+}
+
+@media screen and (max-width: 900px) {
+	
+	.overSlider {
+		width: 340px;
+		left: 50%;
+		top: 30%;
+	}
+	
+}
+
+@media screen and (max-width: 700px) {
+	
+	
+	
+	.overSlider {
+		display: none;
+	}
+	
+}
+
+@media screen and (max-width: 600px) {
+	
+	.searchBar {
+		display: none;
+	}
+	
+	.overSlider {
+		display: none;
+	}
+	
+	.chooseSec h1 {
+		width: 300px;
+		margin-left: -150px;
+		font-size: 26px;
+	}
+	
+	.welcomeMessage p {
+		width: 300px;
+	}
+	
+	.tabs {
+		display: none;
+	}
+	
+	.tab {
+		display: none;
+	}
+	
+	.offense {
+		display: none;
+	}
+	
+	.defense {
+		display: none;
+	}
+	
+	.tank {
+		display: none;
+	}
+	
+	.support {
+		display: none;
+	}
+	
+	.offense1 {
+		display: none;
+	}
+	
+	.defense1 {
+		display: none;
+	}
+	
+	.tank1 {
+		display: none;
+	}
+	
+	.support1 {
+		display: none;
+	}
+	
+	.heroMobile {
+		display: block;
+	}
+	
+	.footer {
+		display: none;
+	}
+	
+	.nav ul {
+		display: none;
+	}
+	
+	.hamburger img {
+		display: block;
+	}
+	
+	.sideBar {
+		display: block;
+	}
+	
+}
+
+@font-face {
+	font-family: BigNoodleTitling;
+	src: url("big_noodle_titling.ttf");
+}
+
+@font-face {
+	font-family: BigNoodleTitlingOblique;
+	src: url("big_noodle_titling_oblique.ttf");
+}
